@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Poly&family=Rancho&family=Satisfy&display=swap');
+body {
+   margin: 0;
+   padding: 0;
+}
+
+h2 {
+   padding: 10px 20px;
+   font-size: 30px;
+   font-family: 'Caveat Brush', sans-serif;
+   color: #647277;
+   background-color: #fcb3b3;
+   text-shadow: 2px 2px 4px #fafab0;
+}
+
+h3 {
+   padding: 10px 20px;
+   font-family: 'Caveat Brush', sans-serif;
+   font-size: 25px;
+   color: #647277;
+   background-color: #85e3ff;
+}
+
+h4 {
+   font-family: 'Satisfy', sans-serif;
+   font-size: 25px;
+   color: #6e8a94;
+}
+
+h5 {
+   padding: 15px;
+   font-family: 'Satisfy', sans-serif;
+   font-size: 20px;
+   color: #647277;
+   margin: auto;
+}
+
+p, dl {
+   font-family: 'Poly', sans-serif;
+}
+
+/*nav container*/
+a {
+   font-size: 25px;
+   font-family: 'Caveat Brush', sans-serif;
+   text-decoration: none;
+   color: #627277;
+   padding: 10px 0;
+}
+
+a:hover {
+   text-shadow: 2px 2px 4px #fafab0;
+}
+
+.flex-container {
+   display: flex;
+   justify-content: space-around;
+   align-content: center;
+   background-color: #86eff4;
+   border-top: 3px dotted black;
+   border-bottom: 3px dotted black;
+   padding: 10px;
+   position: sticky;
+   top: 0;
+   padding: 0;
+   z-index: 99999;
+}
+
+.toggle-nav {
+   display: none;
+ }
+
+ .toggle-nav:hover {
+   cursor: pointer;
+   opacity: 0.5;
+   transition: 0.5s;
+ }
+
+.jumbotron {
+   font-size: 20px;
+   font-family: 'Rancho', sans-serif;
+   padding: 30px;
+   background-image: url('../image/bodybackground.jpg');
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   text-align: center;
+   color: #627277;
+}
+
+main {
+   padding: 20px;
+   overflow: auto;
+   line-height: 1.5;
+   text-align: justify;
+}
+
+dt {
+   font-weight: bold;
+}
+
+hr {
+   background-color: #85e3ff;
+   height: 5px;
+}
+
+footer {
+   padding: 20px;
+   color: white;
+   background-color: #647277;
+   text-align: center;
+}
+
+.table {
+   margin: auto;
+   width: 500px;
+   text-align: center;
+}
+
+.th1 {
+   width: 350px;
+   text-align: center;
+   background-color: #fade78;
+}
+
+.th2 {
+   width: 150px;
+   text-align: center;
+   background-color: #fade78;
+}
+
+tr {
+   background-color: #fdd8bd;
+   text-align: center;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+#content {
+   margin: auto;
+   float: left;
+   width: 75%;
+}
+
+.titleBox {
+   width: 100%;
+}
+
+.card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   padding: 30px;
+   margin: -25px 10px 0px 10px;
+   background-color: #ffffd1;
+}
+
+/*image*/
+.featured-image {
+   width: 100%;
+   height: auto;
+   display: block;
+}
+
+.featured-image2 {
+   padding: 10px;
+   border-radius: 100%;
+   width: 50%;
+   height: auto;
+   float: right;
+}
+
+.image {
+   float: left;
+   max-width: 25%;
+   padding: 10px;
+}
+
+.image-box {
+   max-width: 100%;
+   max-height: 100px;
+   border: 3px dashed black;
+   margin: auto;
+   top: -30px;
+}
+
+.box-title {
+    width: 130px;
+    height: 60px;
+    border: 3px dashed black;
+    background-color: white;
+    margin: auto;
+    z-index: 1;
+    top: 0px;
+    padding-bottom: 10px;
+}
+
+.box-title, .image-box {
+    display: flex;
+    position: relative;
+}
+
+/*Aside*/
+aside {
+   float: left;
+   width: 25%;
+   padding-left: 15px;
+}
+
+input {
+   background-color: yellow;
+   width: 100%;
+   padding: 5px;
+   margin: 5px 0px;
+   border-radius: 5px;
+}
+
+aside button {
+   text-align: center;
+   width: 100%;
+   padding: 5px 0px;
+   margin: 0px auto;
+}
+
+aside button:hover {
+   transition:0.5s;
+   cursor: pointer;
+}
+
+label {
+   float: left;
+}
+
+#twitter {
+   font-size: 20px;
+   color: #1da1f2;   
+}
+
+#instagram {
+   font-size: 20px;
+   color: purple;  
+}
+
+div.form-group {
+   margin: 10px 0px;
+}
+
+/*Responsive mode*/
+@media screen and (max-width: 1000px) {
+   #content {
+      width: 100%;
+      padding: 0px;
+      float: none;
+   }
+   
+   aside {
+      width: 50%;
+      margin: 0px;
+      float: center;
+   }
+
+   .table {
+      overflow-x: auto;
+      width: 100%;
+   }
+}
+
+/*Responsive mode of nav*/
+@media screen and (max-width: 1000px) {
+   .toggle-nav {
+     float: right;
+     padding: 15px;
+     display: block;
+     width: 100px;
+     align-items: 
+   }
+
+   .flex-container {
+     display: block;
+     overflow: auto;
+   }
+
+   nav a {
+     display: none;
+   }
+
+   .nav-item {
+     clear: right;
+     display: list-item;
+     padding: 0px 20px;
+     width: 90%;
+   }
+ 
+ }
